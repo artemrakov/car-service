@@ -47,6 +47,7 @@
 
 .card {
  height: 175px;
+ margin-right: 10px;
 }
 
 .header-card {
@@ -59,7 +60,7 @@
     font-size: 20px;
     margin-left: 20px;
     font-family: $headers-font;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -67,8 +68,13 @@
   p {
     margin-top: 10px;
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
 
+@media (min-width: 1400px) {
+.cards {
+    width: 1270px;
+}
+}
