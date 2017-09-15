@@ -24,6 +24,7 @@
   border-radius: 2px;
   font-family: "Ubuntu";
   font-weight: normal;
+  font-size: 18px;
   &:hover {
     text-decoration: none;
     background-color:#C22F2F;
@@ -41,13 +42,14 @@
     font-size: 36px;
     font-weight: bold;
     font-family: $headers-font;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 }
 
 .card {
  height: 175px;
  margin-right: 10px;
+ margin-top: 10px;
 }
 
 .header-card {
@@ -70,11 +72,4 @@
     font-weight: lighter;
     font-size: 15px;
   }
-}
-
-
-@media (min-width: 1400px) {
-.cards {
-    width: 1270px;
-}
 }
