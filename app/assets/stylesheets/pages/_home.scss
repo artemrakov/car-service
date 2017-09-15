@@ -29,6 +29,10 @@
     background-color:#C22F2F;
     color: white;
   }
+  &:focus {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 
