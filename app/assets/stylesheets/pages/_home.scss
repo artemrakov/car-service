@@ -8,7 +8,7 @@
   background-position: center;
   text-align: center;
   h1 {
-    font-size: 50px;
+    font-size: 45px;
     color: white;
     font-weight: bold;
     text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
@@ -32,6 +32,31 @@
   &:focus {
     color: white;
     text-decoration: none;
+  }
+}
+
+.cards {
+  height: 80vh;
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Ubuntu";
+  }
+}
+
+.card {
+ height: 175px;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    height: 50px;
+  }
+  h4 {
+    font-size: 20px;
   }
 }
 
