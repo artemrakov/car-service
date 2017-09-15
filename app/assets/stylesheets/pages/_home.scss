@@ -4,9 +4,9 @@
   justify-content: center;
   align-items: center;
   height: calc(100vh - 70px);
+  text-align: center;
   background-size: cover;
   background-position: center;
-  text-align: center;
   h1 {
     font-size: 45px;
     color: white;
@@ -72,4 +72,8 @@
     font-weight: lighter;
     font-size: 15px;
   }
+}
+
+.auto-carrosel {
+  height: 20vh;
 }
