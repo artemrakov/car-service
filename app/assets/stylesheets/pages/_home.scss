@@ -40,7 +40,8 @@
   h2 {
     font-size: 36px;
     font-weight: bold;
-    font-family: "Ubuntu";
+    font-family: $headers-font;
+    margin-bottom: 70px;
   }
 }
 
@@ -50,13 +51,23 @@
 
 .header-card {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   img {
     height: 50px;
   }
   h4 {
     font-size: 20px;
+    margin-left: 20px;
+    font-family: $headers-font;
+    letter-spacing: 1.5px;
+  }
+}
+
+.content-card {
+  p {
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 14px;
   }
 }
 
