@@ -8,6 +8,7 @@ gem 'puma'
 gem 'rails', '5.1.3'
 gem 'redis'
 
+gem 'swiper-rails'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
@@ -15,7 +16,6 @@ gem 'jquery-rails'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
-gem 'swiper-rails'
 
 group :development, :test do
   gem 'pry-byebug'

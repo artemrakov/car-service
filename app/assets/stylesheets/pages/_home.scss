@@ -36,8 +36,10 @@
   }
 }
 
+.wrapper-cards {
+}
+
 .cards {
-  height: 80vh;
   h2 {
     font-size: 36px;
     font-weight: bold;
@@ -75,6 +77,40 @@
   }
 }
 
+.what-we-serve {
+ margin-top: 50px;
+ margin-bottom: 100px;
+}
+
 .auto-carrosel {
-  height: 20vh;
+  height: 58px;
+  position: relative;
+}
+
+.auto-carrosel-container {
+  height: 58px;
+}
+
+.serve {
+  margin-bottom: 70px;
+  font-size: 34px;
+}
+
+.car {
+  height: 58px;
+  background-size: cover;
+  background-position: center;
+}
+
+.arrow-left {
+  margin-left: 20px;
+}
+
+.arrow-right {
+  margin-right: 20px;
+}
+
+.car-img {
+  height: 58px;
+  color: red;
 }
