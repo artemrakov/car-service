@@ -3,13 +3,33 @@
   color: #333333;
   margin-top: 40px;
 }
+
+.btn-bookings {
+  text-decoration: none;
+  color: #D23333;
+  background-color: white;
+  text-align: center;
+  letter-spacing: .5px;
+  border: 1px solid #D23333;
+  box-shadow: none !important;
+  padding: 12px 20px !important;
+  font-family: $headers-font;
+  border-radius: 2px !important;
+  &:hover {
+    color: white;
+    background-color: #D23333;
+  }
+}
+
+input:-webkit-autofill { +label { @extend .active; } }
+
 /* label focus color */
 .input-field input[type=text]:focus + label {
- color: #D23333 !important;
+  color: #D23333 !important;
 }
 
 .input-field input[type=email]:focus + label {
- color: #D23333 !important;
+  color: #D23333 !important;
 }
 
 .input-field input[type=tel]:focus + label {

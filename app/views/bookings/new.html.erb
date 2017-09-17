@@ -4,23 +4,32 @@
       <h3 class="center-align booking-header"> Заполните форму </h3>
     <%= simple_form_for @booking do |f| %>
       <div class="row">
-        <%= f.input :first_name, wrapper_html: { class: 'col s6' } %>
-        <%= f.input :last_name, wrapper_html: { class: 'col s6' } %>
+        <%= f.input :first_name, label: 'Имя', error: 'Заполните поле', wrapper_html: { class: 'col s6' } %>
+        <%= f.input :last_name, label: 'Фамилия', error: 'Заполните поле', wrapper_html: { class: 'col s6' } %>
       </div>
       <div class="row">
-        <%= f.input :email, wrapper_html: { class: 'col s12' } %>
+        <%= f.input :email, label: 'Почта', error: 'Заполните поле', wrapper_html: { class: 'col s12' } %>
       </div>
       <div class="row">
-        <%= f.input :phone, wrapper_html: { class: 'col s12' } %>
+        <%= f.input :phone, label: 'Номер', error: 'Заполните поле', wrapper_html: { class: 'col s12' } %>
       </div>
       <div class="row">
-        <%= f.input :model, wrapper_html: { class: 'col s12' } %>
+        <%= f.input :model, label: 'Марка и модель автомобиля', error: 'Заполните поле', wrapper_html: { class: 'col s12' } %>
       </div>
       <div class="row">
-        <%= f.input :content, as: :text, wrapper_html: { class: 'col s12' } %>
+        <%= f.input :content, label: 'Опишите проблему', error: 'Заполните поле', as: :text, wrapper_html: { class: 'col s12' } %>
       </div>
-      <%= f.button :submit, class: 'waves-effect waves-teal' %>
+      <%= f.submit 'ЗАБРОНИРОВАТЬ',  class: 'btn-bookings' %>
     <% end %>
     </div>
   </div>
 </div>
+
+<!--
+<%# content_for(:after_js) do %>
+  <script>
+    $(document).ready(function() {
+      Materialize.updateTextFields();
+    });
+  </script>
+<%# end %> -->
