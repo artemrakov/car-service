@@ -25,13 +25,23 @@
     <a href="#" class="button-collapse" data-activates="mobile-demo" id="navbar-awm-menu">  <i class="fa fa-bars" ></i>  </a>
     <ul id='mobile-demo' class="side-nav side-menu-awm">
       <li>
-        <% link_to '#' do  %>
-
+        <%= link_to '#' do  %>
+          <i class="fa fa-home icon-navbar-awm" aria-hidden="true"></i>
+          <p> Главная </p>
         <% end %>
       </li>
-      <li class="center-align"><a href="#"><i class="fa fa-home icon-navbar-awm" aria-hidden="true"></i> Главная</a></li>
-      <li class="center-align"><a href="#"><i class="fa fa-wrench icon-navbar-awm" aria-hidden="true"></i>Услуги</a></li>
-      <li class="center-align"><a href="#"><i class="fa fa-search icon-navbar-awm" aria-hidden="true"></i>Найти нас</a></li>
+      <li>
+        <%= link_to '#' do  %>
+          <i class="fa fa-wrench icon-navbar-awm" aria-hidden="true"> </i>
+          <p> Услуги </p>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to '#' do  %>
+          <i class="fa fa-search icon-navbar-awm" aria-hidden="true"></i>
+          <p> Найти нас </p>
+        <% end %>
+      </li>
     </ul>
   </div>
 </div>
