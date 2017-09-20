@@ -121,3 +121,37 @@
   background-size: cover;
   background-position: center;
 }
+
+.service-header {
+  font-size: 34px;
+  font-family: $headers-font;
+  color: white;
+  margin-top: 40px;
+}
+
+.service-card-awm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card-img-awm {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.service-card-content-awm {
+  color: white;
+  h4 {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: $headers-font;
+    margin-bottom: 10px
+  }
+  p {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: $headers-font;
+  }
+}
