@@ -15,6 +15,7 @@
   padding: 12px 20px !important;
   font-family: $headers-font;
   border-radius: 2px !important;
+  transition: .4s;
   &:hover {
     color: white;
     background-color: #D23333;
