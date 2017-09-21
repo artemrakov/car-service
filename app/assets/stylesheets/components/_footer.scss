@@ -1,4 +1,48 @@
 .footer-block-awm {
   display: flex;
   justify-content: space-around;
+  margin-right: 50px;
+}
+
+.header-footer {
+  font-size: 20px;
+  font-family: $headers-font;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+.footer-block-awm-content {
+}
+
+.wrapper-footer {
+  border: 1px solid white;
+  padding-top: 20px;
+}
+
+.header-address {
+  font-size: 18px;
+  font-family: $headers-font;
+  color: #333333;
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.btn-footer {
+  font-size: 16px;
+  font-family: $headers-font;
+  padding: 20px 28px;
+  color: #333333;
+  font-weight: lighter;
+  border: 1px solid #333333;
+  border-radius: 2px;
+  transition: .4s;
+   &:hover {
+    color: #D23333;
+    border: 1px solid #D23333;
+   }
+}
+
+#city {
+  margin-bottom: 30px !important;
 }
