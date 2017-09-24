@@ -7,6 +7,6 @@ class UserMailer < ApplicationMailer
   #
   def booking(user)
     @user = user
-    mail(from: "Команда AWM", to: "scoff1k@gmail.com", header: "", subject: "Бронь от #{user.first_name}")
+    mail(from: "Команда AWM <amwvrn@google.com>", to: "scoff1k@gmail.com", header: "", subject: "Бронь от #{user.first_name}")
   end
 end
