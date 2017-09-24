@@ -1,4 +1,5 @@
 class BookingsController < ApplicationController
+
   def new
     @booking = Booking.new
   end
@@ -11,6 +12,8 @@ class BookingsController < ApplicationController
       render new_booking_path(@booking)
     end
   end
+
+  private
 
   def booking_params
     params.require(:booking).permit(:first_name, :last_name, :email, :phone, :model, :content)
