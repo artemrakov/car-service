@@ -61,3 +61,10 @@
   margin-bottom: 13px;
 }
 
+@media only screen and (max-width: 600px) {
+    .footer-block-awm  {
+      display: block;
+      margin-left: 50px;
+    }
+}
+
