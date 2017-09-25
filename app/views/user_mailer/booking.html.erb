@@ -1,2 +1,22 @@
-<p>Бронь от <%= @user.first_name %></p>
+<h2> Поступила заявка </h2>
+<h3> Позвонить по номеру: <strong> <%= @user.phone %> </strong></h3>
+<h4> Данные: </h4>
+<p>Имя: <strong> <%= @user.first_name %> </strong> </p>
+<% unless @user.last_name.empty? %>
+  <p>Фамилия: <strong> <%= @user.last_name %> </strong> </p>
+<% end %>
+<br>
+<h4> Контакты: </h4>
+<p>Email: <strong> <%= @user.email %> </strong> </p>
+<p>Телефон: <strong> <%= @user.phone %> </strong> </p>
+<br>
+<% unless @user.model.empty? && @user.model.empty? %>
+  <h4>Проблема: </h4>
+  <% unless @user.model.empty? %>
+    <p>Модель: <strong> <%= @user.model %> </strong> </p>
+  <% end %>
+  <% unless @user.content.empty? %>
+    <p>Пробема: <strong> <%= @user.content %> </strong> </p>
+  <% end %>
+<% end %>
 
