@@ -1,7 +1,9 @@
 <div id="map" style="width: 600px; height: 400px"></div>
 
+<% content_for(:before_js) do %>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<% end %>
 <% content_for(:after_js) do %>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
   <script type="text/javascript">
     ymaps.ready(init);
       var myMap,
@@ -9,12 +11,14 @@
 
       function init(){
           myMap = new ymaps.Map("map", {
-              center: [55.76, 37.64],
-              zoom: 7
+              center: [51.642284, 39.139453],
+              zoom: 16
           });
 
-          myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-              hintContent: 'Moscow!', balloonContent: 'Capital of Russia'
+          myPlacemark = new ymaps.Placemark([51.642284, 39.139453], {
+              hintContent: '<%= image_tag 'awm.png', class: 'map-awm' %>', balloonContent: 'AWM автосервис'
+          }, {
+            preset: 'islands#redDotIconWithCaption'
           });
 
           myMap.geoObjects.add(myPlacemark);
