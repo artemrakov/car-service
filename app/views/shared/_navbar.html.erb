@@ -13,7 +13,7 @@
       <%= link_to "Услуги", root_path, class: "navbar-awm-link" %>
     </div>
      <div class="navbar-awm-item">
-      <%= link_to "Найти нас", find_us_path, class: "navbar-awm-link" %>
+      <%= link_to "Найти нас", find_us_url, class: "navbar-awm-link" %>
     </div>
   </div>
 <!-- navbar-awm-dropdown-menu -->
@@ -35,7 +35,7 @@
         <% end %>
       </li>
       <li>
-        <%= link_to find_us_path do  %>
+        <%= link_to find_us_url do  %>
           <i class="fa fa-search icon-navbar-awm" aria-hidden="true"></i>
           <p> Найти нас </p>
         <% end %>

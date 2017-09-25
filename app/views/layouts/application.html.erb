@@ -9,32 +9,10 @@
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= favicon_link_tag %>
-      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script type="text/javascript">
-    ymaps.ready(init);
-      var myMap,
-          myPlacemark;
-
-      function init(){
-          myMap = new ymaps.Map("map", {
-              center: [51.642284, 39.139453],
-              zoom: 16
-          });
-
-          myPlacemark = new ymaps.Placemark([51.642284, 39.139453], {
-              hintContent: '<%= image_tag 'awm.png', class: 'map-awm' %>', balloonContent: 'AWM автосервис'
-          }, {
-            preset: 'islands#redDotIconWithCaption'
-          });
-
-          myMap.geoObjects.add(myPlacemark);
-      }
-  </script>
   </head>
   <body>
     <%= render "shared/navbar" %>
     <%= yield %>
-    <%= yield(:before_js) %>
     <%= javascript_include_tag 'application' %>
     <%= yield(:after_js) %>
   </body>
