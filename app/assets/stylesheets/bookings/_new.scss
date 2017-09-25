@@ -22,6 +22,12 @@
   }
 }
 
+.line-footer {
+  margin-top: 100px;
+  height: 1px;
+  border-top: 1px solid #DBDBDB !important;
+}
+
 input:-webkit-autofill { +label { @extend .active; } }
 
 /* label focus color */
