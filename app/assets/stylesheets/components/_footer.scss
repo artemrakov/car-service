@@ -46,3 +46,18 @@
 #city {
   margin-bottom: 30px !important;
 }
+
+
+.phone-footer {
+  display: flex;
+  align-items: center;
+  img {
+    height: 50px;
+  }
+
+  p {
+    margin-left: 20px;
+  }
+  margin-bottom: 13px;
+}
+
