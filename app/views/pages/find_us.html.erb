@@ -2,8 +2,6 @@
 
 <% content_for(:before_js) do %>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<% end %>
-<% content_for(:after_js) do %>
   <script type="text/javascript">
     ymaps.ready(init);
       var myMap,
@@ -24,4 +22,7 @@
           myMap.geoObjects.add(myPlacemark);
       }
   </script>
+<% end %>
+<% content_for(:after_js) do %>
+
 <% end %>
