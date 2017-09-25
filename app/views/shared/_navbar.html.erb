@@ -1,21 +1,19 @@
 <div class="navbar-awm">
   <!-- Logo -->
-  <a href="/" class="navbar-awm-brand">
+  <%= link_to root_path, class: 'navbar-awm-brand' do %>
     <%= image_tag "awm123.jpg" %>
-  </a>
+  <% end %>
 
   <!-- Right Navigation -->
   <div class="navbar-awm-right hide-on-small-only hide-on-med-only">
     <div class="navbar-awm-item">
-     <a href="" class="navbar-awm-link">Главная</a>
-
+      <%= link_to "Главная", root_path, class: "navbar-awm-link" %>
     </div>
      <div class="navbar-awm-item">
-      <a href="" class="navbar-awm-link">Услуги</a>
-
+      <%= link_to "Услуги", root_path, class: "navbar-awm-link" %>
     </div>
      <div class="navbar-awm-item">
-       <a href="" class="navbar-awm-link">Найти нас</a>
+      <%= link_to "Найти нас", find_us_path, class: "navbar-awm-link" %>
     </div>
   </div>
 <!-- navbar-awm-dropdown-menu -->
@@ -25,7 +23,7 @@
     <a href="#" class="button-collapse" data-activates="mobile-demo" id="navbar-awm-menu">  <i class="fa fa-bars" ></i>  </a>
     <ul id='mobile-demo' class="side-nav side-menu-awm">
       <li>
-        <%= link_to '#' do  %>
+        <%= link_to root_path do  %>
           <i class="fa fa-home icon-navbar-awm" aria-hidden="true"></i>
           <p> Главная </p>
         <% end %>
@@ -37,7 +35,7 @@
         <% end %>
       </li>
       <li>
-        <%= link_to '#' do  %>
+        <%= link_to find_us_path do  %>
           <i class="fa fa-search icon-navbar-awm" aria-hidden="true"></i>
           <p> Найти нас </p>
         <% end %>
