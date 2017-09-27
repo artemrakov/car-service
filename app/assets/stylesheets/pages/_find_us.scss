@@ -13,3 +13,28 @@
 #map {
   flex: 0 0 500px;
 }
+
+.header-footer-card {
+  font-size: 38px;
+  font-family: $headers-font;
+}
+
+.title-find-us {
+  font-family: $headers-font;
+  font-size: 58px;
+}
+
+.contact-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  img {
+    height: 50px;
+  }
+
+  p {
+    margin-left: 20px;
+  }
+  margin-bottom: 13px;
+}
