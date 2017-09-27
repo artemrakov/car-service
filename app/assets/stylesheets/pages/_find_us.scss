@@ -10,9 +10,7 @@
   flex-grow: 1;
 }
 
-#map {
-  flex: 0 0 500px;
-}
+
 
 .header-footer-card {
   font-size: 38px;
@@ -78,3 +76,21 @@
 .kill-margin-bottom-contact-footer {
   margin-bottom: 0 !important;
 }
+
+@media only screen and (max-width: 600px) {
+    #map  {
+
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #map {
+      flex: 0 0 300px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    #map  {
+      flex: 0 0 500px;
+    }
+}
+
