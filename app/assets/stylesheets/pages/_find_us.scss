@@ -4,6 +4,7 @@
 
 .page-container {
   display: flex;
+  height: 100vh;
 }
 
 .footer-cards {
@@ -18,11 +19,16 @@
   font-size: 38px;
   font-family: $headers-font;
   margin-top: 0;
+  color: #333333;
 }
 
 .title-find-us {
   font-family: $headers-font;
   font-size: 58px;
+  margin-bottom: 70px;
+  color: #333333;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 10px;
 }
 
 .contact-footer {
@@ -38,4 +44,38 @@
     margin-left: 20px;
   }
   margin-bottom: 13px;
+}
+
+
+.header-text-findus {
+  margin-top: 0;
+  font-size: 18px;
+  font-family: $headers-font;
+  font-weight: lighter;
+  margin-bottom: 12px;
+  color: #333333;
+
+}
+
+.header-time-findus {
+  font-size: 17px;
+  font-family: $headers-font;
+  font-weight: bold;
+  color: #333333;
+}
+
+.find-us-card-margin {
+  margin-bottom: 60px;
+}
+
+.find-us-end {
+  margin-bottom: 0 !important;
+}
+
+.kill-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.kill-margin-bottom-contact-footer {
+  margin-bottom: 0 !important;
 }
