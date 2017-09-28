@@ -10,6 +10,7 @@ gem 'redis'
 gem 'turbolinks'
 gem 'sidekiq'
 gem 'sidekiq-failures'
+gem 'rest-client'
 
 gem 'swiper-rails'
 gem 'autoprefixer-rails'

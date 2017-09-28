@@ -1,9 +1,14 @@
 class Booking < ApplicationRecord
-  after_create :send_booking_email
+  after_create :send_booking_email, :sind_booking_sms
 
   validates :first_name, :email, :phone, presence: true
 
   def send_booking_email
     UserMailer.booking(self.id).deliver_later
+  end
+
+  def send_booking_sms
+    blowerio = RestClient::Resource.new(ENV['BLOWERIO_URL'])
+    blowerio['/messages'].post :to => '+44 7478 244248', :message => "Hello from #{self.first_name}"
   end
 end
