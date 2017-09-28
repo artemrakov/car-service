@@ -1,3 +1,19 @@
-User#booking
-
-<%= @greeting %>, find me in app/views/user_mailer/booking.text.erb
+ Поступила заявка
+  Позвонить по номеру: <%= @booking.phone %>
+ Данные:
+ Имя: <%= @booking.first_name %>
+<% unless @booking.last_name.empty? %>
+   Фамилия: <%= @booking.last_name %>
+<% end %>
+ Контакты:
+ Email: <%= @booking.email %>
+ Телефон: <%= @booking.phone %>
+<% unless @booking.model.empty? && @booking.model.empty? %>
+  Проблема:
+  <% unless @booking.model.empty? %>
+     Модель: <%= @booking.model %>
+  <% end %>
+  <% unless @booking.content.empty? %>
+     Пробема: <%= @booking.content %>
+  <% end %>
+<% end %>
