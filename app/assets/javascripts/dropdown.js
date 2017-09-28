@@ -5,7 +5,7 @@ $('.dropdown-button').dropdown({
 
 $(document).ready(function(){
   $(".button-collapse").sideNav({
-    menuWidth: 200,
+    menuWidth: 250,
     edge: 'right'
   });
 })
