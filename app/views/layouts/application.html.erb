@@ -9,11 +9,11 @@
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= favicon_link_tag %>
-    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <%= render "shared/navbar" %>
     <%= yield %>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <%= javascript_include_tag 'application' %>
     <%= yield(:after_js) %>
   </body>
