@@ -9,6 +9,6 @@ class Booking < ApplicationRecord
 
   def send_booking_sms
     blowerio = RestClient::Resource.new(ENV['BLOWERIO_URL'])
-    blowerio['/messages'].post :to => '+44 7478 244248', :message => "Postypilo bronirovanie v AWM. Nomer: #{self.phone}. Podrovnaya info na po4te"
+    blowerio['/messages'].post :to => '+79191893713', :message => "Postypilo bronirovanie v AWM. Nomer: #{self.phone}. Podrovnaya info na po4te"
   end
 end
