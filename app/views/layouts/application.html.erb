@@ -12,8 +12,8 @@
   </head>
   <body>
     <%= render "shared/navbar" %>
-    <%= yield %>
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <%= yield %>
     <%= javascript_include_tag 'application' %>
     <%= yield(:after_js) %>
   </body>
