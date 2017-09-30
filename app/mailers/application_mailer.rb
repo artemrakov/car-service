@@ -1,5 +1,5 @@
 
 class ApplicationMailer < ActionMailer::Base
-  default from: 'awmvrn@gmail.com'
+  default from: 'contact@awm-vrn.ru'
   layout 'mailer'
 end
