@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title> <%= yield(:title_tag) %> </title>
-    <meta name="description" content="Аwm (Авм) - Профессиональный автосервис в Воронеже. Мы предоставляем огромный выбор услуг ремонта для любой машины и марки автомобиля" />
+    <title><%= yield(:title_tag).blank? ? "Awm(Авм) - Автосервис в Воронеже. " : yield(:title_tag) %> </title>
+    <meta name="description" content="Профессиональный автосервис в Воронеже. Мы предоставляем огромный выбор услуг ремонта для любой машины и марки автомобиля" />
     <meta property="og:title" content="Awm | Автосервис с безупречной репутацией" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://www.awm-vrn.ru/" />
