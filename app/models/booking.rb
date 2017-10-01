@@ -1,5 +1,5 @@
 class Booking < ApplicationRecord
-  after_create :send_booking_email
+  after_create :send_booking_email, :send_booking_sms
 
   validates :first_name, :email, :phone, presence: true
 
