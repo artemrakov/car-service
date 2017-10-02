@@ -80,11 +80,11 @@
 
       function init(){
           myMap = new ymaps.Map("map", {
-              center: [51.64236238396459,39.13840434768797],
+              center: [51.642284, 39.139453],
               zoom: 16
           });
 
-          myPlacemark = new ymaps.Placemark([51.642284, 39.139453], {
+          myPlacemark = new ymaps.Placemark([51.64236238396459,39.13840434768797], {
               hintContent: '<%= image_tag 'awm.png', class: 'map-awm' %>', balloonContent: 'AWM автосервис'
           }, {
             preset: 'islands#redDotIconWithCaption'
