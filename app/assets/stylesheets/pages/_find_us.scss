@@ -77,6 +77,36 @@
   margin-bottom: 0 !important;
 }
 
+.phone-footer-find-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  img {
+    height: 50px;
+  }
+
+  p {
+    margin-left: 30px;
+  }
+  margin-bottom: 13px;
+}
+
+.phone-footer-find {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  img {
+    height: 50px;
+  }
+
+  p {
+    margin-left: 20px;
+  }
+  margin-bottom: 13px;
+}
+
 @media only screen and (max-width: 600px) {
     #map  {
 
