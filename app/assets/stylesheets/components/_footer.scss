@@ -86,6 +86,10 @@
 }
 
 .phone-numbers {
-  font-style: $headers-font;
+  font-family: $headers-font;
+  p {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
 }
 
