@@ -4,8 +4,7 @@ class Booking < ApplicationRecord
   validates :first_name, :email, :phone, presence: true
 
   def send_booking_email
-    UserMailer.booking_awm(self.id).deliver_later
-    UserMailer.booking_me(self.id).deliver_later
+    UserMailer.booking(self.id).deliver_later
   end
 
   def send_booking_sms
