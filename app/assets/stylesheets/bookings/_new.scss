@@ -39,7 +39,7 @@ input:-webkit-autofill { +label { @extend .active; } }
   color: #D23333 !important;
 }
 
-.input-field input[type=tel]:focus + label {
+.input-field input[type=number]:focus + label {
  color: #D23333 !important;
 }
 
@@ -57,7 +57,7 @@ input:-webkit-autofill { +label { @extend .active; } }
  box-shadow: 0 1px 0 0 #D23333 !important;
 }
 
-.input-field input[type=tel]:focus {
+.input-field input[type=number]:focus {
  border-bottom: 1px solid #D23333 !important;
  box-shadow: 0 1px 0 0 #D23333 !important;
 }
