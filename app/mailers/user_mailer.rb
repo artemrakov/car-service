@@ -7,6 +7,7 @@ class UserMailer < ApplicationMailer
   #
   def booking(booking_id)
     @booking = Booking.find(booking_id)
-    mail(to: "oooawm2015@mail.ru", subject: "Бронь от #{@booking.first_name}")
+    # mail(to: "oooawm2015@mail.ru", subject: "Бронь от #{@booking.first_name}")
+    mail(to: "rakov.artem97@gmail.com", subject: "Бронь от #{@booking.first_name}")
   end
 end
