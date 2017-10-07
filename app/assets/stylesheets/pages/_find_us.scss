@@ -118,19 +118,16 @@
 
 }
 @media only screen and (min-width: 600px) and (max-width: 992px) {
-    #map {
-      flex: 0 0 300px;
-      height: calc(100vh - 70px);
-    }
+
 }
 
-@media only screen and (min-width: 993px) and (max-width: 1199) {
-    #map  {
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    #map {
       flex: 0 0 400px;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1201px) {
     #map  {
       flex: 0 0 500px;
     }
