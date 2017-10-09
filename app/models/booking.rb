@@ -8,7 +8,19 @@ class Booking < ApplicationRecord
   end
 
   def send_booking_sms
-    blowerio = RestClient::Resource.new(ENV['BLOWERIO_URL'])
-    blowerio['/messages'].post :to => '+79204271680', :message => "Postypilo bronirovanie v AWM. Nomer: #{self.phone.to_i}. Podrobnaya info na po4te"
+    require 'twilio-ruby'
+
+    account_sid = ENV["TWILLIO_SID"]
+    auth_token = ENV["TWILLIO_TOKEN"]
+
+    begin
+        @client = Twilio::REST::Client.new account_sid, auth_token
+        message = @client.messages.create(
+            body: "Поступило бронирование в AWM. Позвонить на номер #{phone}. Подробная информация отправлена на почту",
+            to: "+79191893713",    # Replace with your phone number
+            from: "+33644641142")  # Replace with your Twilio number
+    rescue Twilio::REST::TwilioError => e
+        puts e.message
+    end
   end
 end
