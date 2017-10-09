@@ -11,7 +11,6 @@ gem 'turbolinks'
 gem 'sidekiq'
 gem 'sidekiq-failures'
 gem 'raygun4ruby'
-gem 'twilio-ruby'
 
 gem 'swiper-rails'
 gem 'autoprefixer-rails'
