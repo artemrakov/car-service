@@ -12,7 +12,7 @@
     color: white;
     font-weight: bold;
     text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-    font-family: "Ubuntu";
+    font-family: $headers-font;
     margin-bottom: 50px;
   }
 }
@@ -22,7 +22,7 @@
   background-color: #D23333;
   color: white;
   border-radius: 2px;
-  font-family: "Ubuntu";
+  font-family: $headers-font;
   font-weight: normal;
   font-size: 18px;
   &:hover {

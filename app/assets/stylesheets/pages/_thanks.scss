@@ -1,0 +1,47 @@
+.banner-thanks {
+  display: flex;
+  height: calc(100vh - 70px);
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  h1 {
+    font-family: $headers-font;
+    font-size: 57px;
+    color: white;
+    letter-spacing: 4px;
+  }
+}
+
+.wrapper-thanks {
+  h2 {
+    font-size: 28px;
+    font-family: $headers-font;
+    font-weight: lighter;
+    margin-top: 50px;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+  p {
+    margin-top: 5px;
+    font-family: $headers-font;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+
+#thanks-start {
+  font-family: $headers-font;
+  font-weight: lighter;
+  font-size: 16px;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+#thanks-end {
+  margin-top: 0;
+  font-family: $headers-font;
+  font-weight: lighter;
+  font-size: 16px;
+}

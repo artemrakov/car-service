@@ -1,0 +1,28 @@
+<% content_for(:title_tag) do %>
+  Спасибо · Awm
+<% end %>
+
+<div class="banner-thanks" style="background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url(<%= image_path 'thanks-banner.jpg' %>)">
+  <h1> Cпасибо </h1>
+</div>
+
+<div class="wrapper-thanks">
+  <div class="row">
+    <div class="col s12 m8 offset-m1 l8 offset-l1">
+      <h2> Cпасибо за вашу заявку</h2>
+      <p>Ваша заявка очень <strong>важна</strong> для нас. Наша команада свяжется с вами в ближайшее время</p>
+      <p>Если у вас срочная проблема, вы всегда можете позвонить нам по телефону &ensp; +7 (473) 202‑07-08 </p>
+
+      <p id='thanks-start'>С уважение,</p>
+      <p id='thanks-end'><strong>Команда AWM</strong></p>
+    </div>
+  </div>
+</div>
+
+
+<div class="line-footer">
+
+</div>
+<%= render 'shared/footer' %>

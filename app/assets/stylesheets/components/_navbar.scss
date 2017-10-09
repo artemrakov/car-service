@@ -37,6 +37,7 @@
 
 /* Navbar link */
 .navbar-awm-link {
+  font-family: $headers-font;
   color: #616668;
   font-size: 16px;
 }
@@ -48,6 +49,7 @@
 
 /* Dropdown menu */
 .side-menu-awm li > a {
+  font-family: $headers-font;
   color: #333333 !important;
   font-size: 20px !important;
   font-weight: lighter;
