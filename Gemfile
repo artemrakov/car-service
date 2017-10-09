@@ -10,7 +10,6 @@ gem 'redis'
 gem 'turbolinks'
 gem 'sidekiq'
 gem 'sidekiq-failures'
-gem 'rest-client'
 gem 'raygun4ruby'
 
 gem 'swiper-rails'
