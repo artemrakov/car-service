@@ -7,7 +7,7 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     if @booking.save
-      redirect_to root_path
+      redirect_to thanks_path
     else
       render new_booking_path(@booking)
     end
