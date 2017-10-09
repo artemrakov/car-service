@@ -16,7 +16,7 @@ class Booking < ApplicationRecord
     begin
         @client = Twilio::REST::Client.new account_sid, auth_token
         message = @client.messages.create(
-            body: "Postypilo bronirovanie v AWM. Podrabnaya info otpravlena na po4ty",
+            body: "Postypilo bronirovanie v AWM. Podrobnaya info otpravlena na po4ty",
             to: "+79103412842",    # Replace with your phone number
             from: "+33644641142")  # Replace with your Twilio number
     rescue Twilio::REST::TwilioError => e
