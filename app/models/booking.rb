@@ -8,7 +8,7 @@ class Booking < ApplicationRecord
 
   def send_booking_sms
     require 'net/http'
-    require 'uri'
+    require 'addressable/uri'
 
     url = "https://gate.smsaero.ru/send/?user=#{ENV['SMS_LOGIN']}&password=#{ENV['SMS_PASSWORD']}&to=#{ENV['SMS_NUMBER']}&text=Поступило бронирование в AWM. Имя клиента #{first_name} . Номер #{phone}. Подробная информация отправлена на почту.&from=biznes"
     uri = Addressable::URI.parse(url)
