@@ -229,6 +229,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  addressable (~> 2.5, >= 2.5.2)
   autoprefixer-rails
   figaro
   font-awesome-sass
