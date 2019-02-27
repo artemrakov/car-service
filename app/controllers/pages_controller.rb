@@ -7,4 +7,8 @@ class PagesController < ApplicationController
 
   def find_us
   end
+
+  def prices
+
+  end
 end
