@@ -107,3 +107,22 @@
   }
 }
 
+.footer-social-links {
+  font-size: 28px;
+  margin-right: 10px;
+  color: #333333;
+  transition: .2s;
+
+  &-vk {
+    &:hover {
+      color: #4A76A7;
+    }
+  }
+
+  &-insta {
+    &:hover {
+      color: #C54269;
+    }
+  }
+}
+
