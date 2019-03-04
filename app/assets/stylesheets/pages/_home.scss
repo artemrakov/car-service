@@ -191,4 +191,38 @@
 }
 
 
+.offers-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
 
+.offers-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+.offers-card-price {
+  width: 132px;
+  height: 100px;
+  background-color: #D23333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  border-radius: 3px;
+
+}
+
+.offers-card-info {
+  color: #D23333;
+  font-size: 25px;
+  font-family: $headers-font;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
