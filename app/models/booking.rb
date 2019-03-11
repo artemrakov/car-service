@@ -2,7 +2,7 @@ class Booking < ApplicationRecord
   require 'net/http'
   require 'uri'
 
-  # after_create :send_booking_email, :send_booking_sms
+  after_create :send_booking_sms
   validates :phone, presence: true
 
   def send_booking_email
