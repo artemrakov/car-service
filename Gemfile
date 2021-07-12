@@ -11,7 +11,7 @@ gem 'turbolinks'
 gem 'sidekiq'
 gem 'sidekiq-failures'
 gem 'raygun4ruby'
-gem 'addressable', '~> 2.5', '>= 2.5.2'
+gem 'addressable', '~> 2.8'
 
 gem 'swiper-rails'
 gem 'autoprefixer-rails'
